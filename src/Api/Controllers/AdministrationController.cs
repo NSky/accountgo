@@ -897,7 +897,7 @@ namespace Api.Controllers
         private string[,] LoadCsv(string filename)
         {
             // Get the file's text.
-            string whole_file = System.IO.File.ReadAllText(filename);
+            string whole_file = filename;// System.IO.File.ReadAllText(filename);
 
             // Split into lines.
             whole_file = whole_file.Replace('\n', '\r');
