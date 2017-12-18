@@ -41,7 +41,7 @@ namespace Services.Administration
             IRepository<GeneralLedgerSetting> generalLedgerSetting,
             IRepository<Account> accountRepo,
             IRepository<AuditLog> auditLogRepo,
-            ISecurityRepository securityRepository = null,
+            ISecurityRepository securityRepository,
             IRepository<Company> company = null
             )
             : base(null, generalLedgerSetting, paymentTermRepo, bankRepo)

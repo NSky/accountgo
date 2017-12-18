@@ -69,6 +69,7 @@ namespace Web
 
             //generic repositories
             builder.RegisterGeneric(typeof(EfRepository<>)).As(typeof(IRepository<>)).InstancePerLifetimeScope();
+            builder.RegisterType<ISecurityRepository>().As<ISecurityRepository>().InstancePerLifetimeScope();
 
             //services
             builder.RegisterType<FinancialService>().As<IFinancialService>().InstancePerLifetimeScope();
